@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios y Soluciones Profesionales</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        :root { --azul: #0a3d7c; --rojo: #c41e3a; --gris: #f5f7fa; --oscuro: #222; }
+        body { line-height: 1.6; color: var(--oscuro); background: #fff; }
+        header { background: linear-gradient(135deg, var(--azul) 0%, #1e5bc7 100%); color: white; padding: 2rem 1rem; text-align: center; }
+        header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        section { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+        h2 { text-align: center; font-size: 1.6rem; color: var(--azul); margin-bottom: 2rem; border-bottom: 2px solid var(--gris); padding-bottom: 0.5rem; }
+        
+        .grid-servicios { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .tarjeta { background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.3s; }
+        .tarjeta:hover { transform: translateY(-5px); }
+        .tarjeta-img { height: 200px; display: flex; align-items: center; justify-content: center; background: var(--gris); overflow: hidden; }
+        .tarjeta-img img { width: 100%; height: 100%; object-fit: cover; }
+        .tarjeta-contenido { padding: 1.5rem; }
+        .tarjeta-contenido h3 { font-size: 1.25rem; margin-bottom: 1rem; color: var(--azul); }
+        .precio { font-size: 1.3rem; font-weight: 700; color: var(--rojo); margin: 1rem 0; }
+        .descripcion { margin-bottom: 1rem; color: #555; }
+        
+        .aviso-uf { font-size: 0.85rem; color: #777; margin-top: 1rem; font-style: italic; }
+        footer { background: var(--gris); text-align: center; padding: 2rem; margin-top: 2rem; font-size: 0.9rem; color: #666; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Soluciones Comerciales y Protección Vehicular</h1>
+    <p>Informes comerciales, plataformas de gestión y seguros automotrices</p>
+</header>
+
+<section>
+    <h2>📄 Informes y Plataformas Equifax</h2>
+    <div class="grid-servicios">
+        <!-- Tarjeta 1: Informe Platinum -->
+        <div class="tarjeta">
+            <div class="tarjeta-img" style="background:#d32f2f;">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="15" y="10" width="70" height="80" rx="6" fill="white"/>
+                    <rect x="25" y="25" width="50" height="8" fill="#d32f2f" rx="2"/>
+                    <rect x="25" y="40" width="40" height="6" fill="#ccc" rx="1"/>
+                    <rect x="25" y="52" width="45" height="6" fill="#ccc" rx="1"/>
+                    <rect x="25" y="64" width="35" height="6" fill="#ccc" rx="1"/>
+                    <text x="50" y="82" text-anchor="middle" font-size="10" font-weight="bold" fill="#d32f2f">PLATINUM</text>
+                </svg>
+            </div>
+            <div class="tarjeta-contenido">
+                <h3>Informe Comercial Platinum</h3>
+                <p class="descripcion">Informes comerciales para personas y empresas. Incluye hasta 10 informes comerciales al mes.</p>
+                <p class="precio">1 UF + IVA</p>
+                <p class="aviso-uf">Valor en UF vigente al momento de la contratación</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2: Plataforma Cobranza Dicom -->
+        <div class="tarjeta">
+            <div class="tarjeta-img" style="background:#b71c1c;">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="15" width="80" height="70" rx="6" fill="white"/>
+                    <text x="50" y="45" text-anchor="middle" font-size="14" font-weight="bold" fill="#b71c1c">DICOM</text>
+                    <rect x="20" y="55" width="60" height="6" fill="#e0e0e0" rx="2"/>
+                    <rect x="20" y="66" width="45" height="6" fill="#e0e0e0" rx="2"/>
+                </svg>
+            </div>
+            <div class="tarjeta-contenido">
+                <h3>Plataforma de Cobranza Dicom</h3>
+                <p class="descripcion">Gestión y publicaciones de cobranza. Publicaciones hasta $4.099.000.</p>
+                <p class="precio">2,7 UF</p>
+                <p class="aviso-uf">Valor en UF vigente al momento de la contratación</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background:var(--gris);">
+    <h2>🚗 Seguro Automotriz Full Cobertura</h2>
+    <div class="grid-servicios" style="max-width:500px; margin:0 auto;">
+        <!-- Tarjeta Seguro con BMW M4 -->
+        <div class="tarjeta">
+            <div class="tarjeta-img" style="background:linear-gradient(135deg,#0f2044,#1e3a8a);">
+                <!-- Imagen de referencia BMW M4 -->
+                <img src="https://images.unsplash.com/photo-1617531653335-bd1c0e6c5d68?w=600&h=400&fit=crop" alt="BMW M4" loading="lazy">
+            </div>
+            <div class="tarjeta-contenido">
+                <h3>Full Cobertura Premium Max</h3>
+                <p class="descripcion">Cotización en las principales aseguradoras: Sura, HDI y BCI. Compara precios y contrata 100% online.</p>
+                <p class="precio">Valor según vehículo</p>
+                <p class="descripcion">Cotización gratuita y sin compromiso</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>📋 ¿Cómo contratar?</h2>
+    <ol style="max-width:600px; margin:0 auto; padding-left:1.5rem;">
+        <li style="margin-bottom:1rem;">Completa tus datos de contacto</li>
+        <li style="margin-bottom:1rem;">Recibes tu cotización o plan personalizado</li>
+        <li style="margin-bottom:1rem;">Revisas y confirmas directamente con la entidad</li>
+        <li>¡Listo! Tu servicio queda activo</li>
+    </ol>
+</section>
+
+<footer>
+    <p>© 2026 — Soluciones Profesionales | Todos los derechos reservados</p>
+    <p style="margin-top:0.5rem;">Servicios en alianza con Equifax, Sura, HDI y BCI</p>
+</footer>
+
+</body>
+</html>
